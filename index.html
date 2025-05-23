@@ -4,11 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- script y link del tailwind y el swiper.js-->
      <script src="https://cdn.tailwindcss.com"></script>
-     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
     
 </head>
 <body>
-    
+    <div class="p-4 bg-gray-100">
+  <h2 class="text-xl font-bold mb-4">Nuevas prendas</h2>
+
+  <!-- Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <!-- Producto 1 -->
+      <div class="swiper-slide w-48 bg-white rounded-xl shadow p-4">
+        <img src="https://via.placeholder.com/150" class="rounded-lg mb-2" />
+        <h3 class="font-semibold text-lg">Remera</h3>
+        <p class="text-sm text-gray-500">$3.500</p>
+      </div>
+
+      <!-- Producto 2 -->
+      <div class="swiper-slide w-48 bg-white rounded-xl shadow p-4">
+        <img src="https://via.placeholder.com/150" class="rounded-lg mb-2" />
+        <h3 class="font-semibold text-lg">Campera</h3>
+        <p class="text-sm text-gray-500">$8.900</p>
+      </div>
+
+      <!-- Producto 3 -->
+      <div class="swiper-slide w-48 bg-white rounded-xl shadow p-4">
+        <img src="https://via.placeholder.com/150" class="rounded-lg mb-2" />
+        <h3 class="font-semibold text-lg">Pantalón</h3>
+        <p class="text-sm text-gray-500">$6.200</p>
+      </div>
+    </div>
+
+    <!-- Flechas de navegación -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+</div>
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
 </body>
 </html>
+<!-- Aqui añadi el script del swiper.js -->
+<script>
+  const swiper = new Swiper(".mySwiper", {
+    slidesPerView: 2.5,
+    spaceBetween: 16,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+      640: {
+        slidesPerView: 3.5,
+      },
+      1024: {
+        slidesPerView: 4.5,
+      },
+    },
+  });
+</script>
