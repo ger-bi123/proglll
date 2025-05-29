@@ -6,7 +6,7 @@
     <title>triple picante</title>
      <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+
     <body  class="font-sans antialiased bg-gradient-to-b from-gray-900 to-red-600 min-h-screen">
     <!-- header de la pagina-->
     <header class="flex items-center justify-between px-6 py-4 ">
@@ -14,8 +14,14 @@
   <h1 class="text-5xl font-extrabold text-orange-400 drop-shadow-md p-4">
   
  Triple picante 
-        
-</h1>
+  </h1>
+  <div class="flex space-x-4">
+  <a href="index.html">
+     <h1 class="text-5xl font-extrabold text-orange-400 drop-shadow-md p-4">
+  Volver
+ </h1>
+  </a>
+  </div>
     </header>
    <!--contenedor principal de la pagina -->
  <div class="container mx-auto px-4 py-6">
@@ -37,44 +43,31 @@
                 <p class="text-xl sm:text-2xl md:text-3xl font-extrabold text-orange-300 drop-shadow-md p-4 italic">
                     Elegi tu acompañamiento
                 </p>
-                <!-- acompañamientos-->
+              <!-- tarjeta de compra -->
                      
- <div class="flex gap-4">
-  <div>
-    <input type="radio" id="simple-option1" name="simple-image-radio" value="img1" class="hidden peer" />
-    <label for="simple-option1" class="block cursor-pointer border-2 border-gray-700 rounded peer-checked:border-orange-700  hover:scale-105 hover:shadow-lg transition-all duration-200 ease-in-out">
-      <img src="imgprog/ChatGPT Image 9 abr 2025, 15_13_41.png" alt="Opción A" class="w-30 h-30 object-cover" />
-    </label>
-   <p class="text-xl sm:text-2xl md:text-3xl font-extrabold text-orange-300 drop-shadow-md p-4 italic">
-                    comunes
-                </p>
-  </div>
+ 
+                 <div class="bg-gradient-to-b from-gray-900 to-red-600 rounded-xl shadow-lg overflow-hidden max-w-sm w-full">
+        <img class="w-full h-48 object-cover" src="imgprog/ChatGPT Image 9 abr 2025, 14_04_54 - copia.png" alt="Descripción de la imagen">
 
-  <div>
-    <input type="radio" id="simple-option2" name="simple-image-radio" value="img2" class="hidden peer" />
-    <label for="simple-option2" class="block cursor-pointer border-2 border-gray-700 rounded peer-checked:border-orange-700  hover:scale-105 hover:shadow-lg transition-all duration-200 ease-in-out">
-      <img src="imgprog/ChatGPT Image 9 abr 2025, 15_18_02.png" alt="Opción B" class="w-30 h-30 object-cover" />
-    </label>
-    <p class="text-xl sm:text-2xl md:text-3xl font-extrabold text-orange-300 drop-shadow-md p-4 italic">
-                  bacon potates
-                </p>
-  </div>
+        <div class="p-6">
+            <h2 class="text-2xl font-bold text-orange-300 mb-2">Realizar Compra</h2>
 
-  <div>
-    <input type="radio" id="simple-option3" name="simple-image-radio" value="img3" class="hidden peer" />
-    <label for="simple-option3" class="block cursor-pointer border-2 border-gray-700 rounded peer-checked:border-orange-700  hover:scale-105 hover:shadow-lg transition-all duration-200 ease-in-out">
-      <img src="imgprog/ChatGPT Image 9 abr 2025, 16_15_54.png" alt="Opción C" class="w-30 h-30 object-cover" />
-    </label>
-    <p class="text-xl sm:text-2xl md:text-3xl font-extrabold text-orange-300 drop-shadow-md p-4 italic">
-                    cheddar deluxe
-                </p>
-  </div>
-</div>
-                
+            <p class="text-orange-300 text-base mb-4">
+                elija como desea pagar la hamburguesa
+            </p>
 
-
+            <div class="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-4">
+                <button class="bg-yellow-600 hover:bg-yellow-800 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full sm:w-auto">
+                    comprar
+                </button>
+                <button class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full sm:w-auto">
+                   forma de pago
+                </button>
             </div>
+        </div>
+    </div> 
 
+ </div>
         </div>
        
  </div>
@@ -114,10 +107,58 @@
 </div>
 
  </div>
+ <!-- PAPAAS -->
+ <div class="container mx-auto px-4 py-6 flex gap-8">
+  <div>
+    <input type="radio" id="simple-option1" name="simple-image-radio" value="img1" class="hidden peer" />
+    <label for="simple-option1" class="block cursor-pointer border-2 border-gray-700 rounded peer-checked:border-orange-700  hover:scale-105 hover:shadow-lg transition-all duration-200 ease-in-out">
+      <img src="imgprog/ChatGPT Image 9 abr 2025, 15_13_41.png" alt="Opción A" class="w-[16rem] h-[16rem] object-cover" />
+    </label>
+   <p class="text-xl sm:text-2xl md:text-3xl font-extrabold text-orange-300 drop-shadow-md p-4 italic">
+                    comunes
+                </p>
+  </div>
+
+  <div>
+    <input type="radio" id="simple-option2" name="simple-image-radio" value="img2" class="hidden peer" />
+    <label for="simple-option2" class="block cursor-pointer border-2 border-gray-700 rounded peer-checked:border-orange-700  hover:scale-105 hover:shadow-lg transition-all duration-200 ease-in-out">
+      <img src="imgprog/ChatGPT Image 9 abr 2025, 15_18_02.png" alt="Opción B" class="w-[16rem] h-[16rem] object-cover" />
+    </label>
+    <p class="text-xl sm:text-2xl md:text-3xl font-extrabold text-orange-300 drop-shadow-md p-4 italic">
+                  bacon potates
+                </p>
+  </div>
+
+  <div>
+    <input type="radio" id="simple-option3" name="simple-image-radio" value="img3" class="hidden peer" />
+    <label for="simple-option3" class="block cursor-pointer border-2 border-gray-700 rounded peer-checked:border-orange-700  hover:scale-105 hover:shadow-lg transition-all duration-200 ease-in-out">
+      <img src="imgprog/ChatGPT Image 9 abr 2025, 16_15_54.png" alt="Opción C" class="w-[16rem] h-[16rem] object-cover" />
+    </label>
+    <p class="text-xl sm:text-2xl md:text-3xl font-extrabold text-orange-300 drop-shadow-md p-4 italic">
+                    cheddar deluxe
+                </p>
+  </div>
+</div>
+ 
+
+<!-- FOOTER DE LA PAG -->
+<footer class="bg-red-750 text-gray-300 py-10 px-8 text-center">
+        <div class="max-w-4xl mx-auto">
+            <h3 class="text-2xl font-bold mb-4">¡Gracias por visitar nuestra página!</h3>
+            
+            <p class="text-md mb-2">
+                &copy; 2025 tripleburger. Todos los derechos reservados.
+            </p>
+            <p class="text-md">
+                Contacto: <a href="mailto:tu-correo@example.com" class="text-blue-400 hover:underline">tripleburger@gmail.com</a>
+                <span class="mx-2">|</span>
+                Ubicación: [argentina,tucuman]
+            </p>
+        </div>
+    </footer>
+ 
 
 
 
-
-</body>
 </body>
 </html>
